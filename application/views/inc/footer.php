@@ -10,8 +10,15 @@
             <a href="<?= social_media_links('skype') ?>" target="_blank" class="google-plus"><i class="bx bxl-skype"></i></a>
             <a href="<?= social_media_links('linkedin') ?>" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
+        <div class="row text-center mb-5">
+            <ul class="d-flex justify-content-center" style="list-style-type: none;">
+                <li class="fs-6 fw-normal"><a href="<?= base_url('privacy-policy') ?>" class="text-white">Privacy Policy</a></li>
+                <li class="fs-6 fw-normal" style="margin-left: 20px;"><a href="<?= base_url('terms-of-services') ?>" class="text-white">Terms Of Services</a></li>
+            </ul>
+        </div>
         <div class="copyright">
             &copy; Copyright <strong><span><?= business_info('buname') . ' ' . date('Y') ?></span></strong>. All Rights Reserved
+            <p>"Ship2Bharat is a venture of Inventevo Infotech Pvt. Ltd."</p>
         </div>
     </div>
     </div>
@@ -28,9 +35,31 @@
 <script src="<?= asset_url('vendor/jquery.min.js') ?>"></script>
 <script src="<?= asset_url('vendor/sweetalert.min.js') ?>"></script>
 <script src="<?= asset_url('js/custom.js') ?>"></script>
+<script src="<?= asset_url('js/payment.js') ?>"></script>
+
+<!-- Messenger Chat plugin Code -->
+<link rel="stylesheet" href="<?= asset_url('wa/floating-wpp.min.css') ?>">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="<?= asset_url('wa/floating-wpp.min.js') ?>"></script>
 
 <!-- Template Main JS File -->
 <script src="<?= asset_url('js/main.js') ?>"></script>
+<div id="WAButton"></div>
+<script>
+    $(function() {
+        $('#WAButton').floatingWhatsApp({
+            phone: '918454954556', //WhatsApp Business phone number International format-
+            //Get it with Toky at https://toky.co/en/features/whatsapp.
+            headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+            popupMessage: 'Hello, how can we help you?', //Popup Message
+            showPopup: true, //Enables popup display
+            buttonImage: '<img src="<?= asset_url('wa/whatsapp.svg') ?>" />', //Button Image
+            //headerColor: 'crimson', //Custom header color
+            //backgroundColor: 'crimson', //Custom background button color
+            position: "right"
+        });
+    });
+</script>
 
 </body>
 

@@ -6,3 +6,5 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['contact-us']['post'] = 'EmailController/contactus';
+$route['gen-payment-link'] = 'PaymentController';
+$route['(:any)'] = 'HomeController/pages/$1';

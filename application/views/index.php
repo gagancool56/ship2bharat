@@ -19,7 +19,7 @@
                                   <li><i class="bi bi-check2-circle text-info fs-5"></i> No Monthly Charges</li>
                               </ul>
                               </p>
-                              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Signup for free</a>
+                              <a href="https://www.qxpress.net/Member/QXSohoRegist" class="btn-get-started animate__animated animate__fadeInUp scrollto">Signup for free</a>
                           </div>
                       </div>
                   </div>

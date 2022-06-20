@@ -34,3 +34,9 @@ $("#contact-us").on("submit", function (e) {
 setInterval(() => {
 	$(".auto-remove").remove();
 }, 5000);
+
+
+// Removing the #from url.
+$(function () {
+	history.replaceState({}, document.title, window.location.href.split("#")[0]);
+});
